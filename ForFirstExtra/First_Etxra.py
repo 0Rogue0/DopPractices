@@ -8,17 +8,17 @@
 """
 
 
-def native_mul(x, y, res=0):
+def naive_mul(x, y, res=0):
     for _ in range(y):
         res += x
-        return x
+    return res
 
 
-def test_native_mul():
+def test_naive_mul():
     for x in range(101):
         for y in range(101):
-            assert native_mul(x, y) == x * y
+            assert naive_mul(x, y) == x * y
     print("Все тесты пройдены")
 
 
-test_native_mul()
+test_naive_mul()

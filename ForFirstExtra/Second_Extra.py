@@ -12,7 +12,7 @@ def fast_mul(x, y, res=0):
         return res + y
     if x % 2 != 0:
         res += y
-    return fast_mul(x // 2, y / 2, res)
+    return fast_mul(x // 2, y * 2, res)
 
 
 def test_fast_mul():
